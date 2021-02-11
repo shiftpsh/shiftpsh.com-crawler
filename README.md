@@ -18,5 +18,4 @@ SHIFTPSH_API_URL = <api endpoint>
 # ...
 ```
 
-
-3. `python main.py`
+3. `pip install -r reqirements.txt && python main.py`
