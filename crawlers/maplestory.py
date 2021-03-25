@@ -26,6 +26,8 @@ def parse(document):
     if len(level) > 0 and len(img) > 0:
         img_base64 = get_as_base64(img[0]['src'])
         print(img_base64)
+        if img_base64 is None:
+               return None
         return {
             "maple_level": level[0],
             "maple_character_image": f"data:image/png;base64, {img_base64}"
