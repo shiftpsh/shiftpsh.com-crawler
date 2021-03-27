@@ -38,7 +38,11 @@ def parse(document):
 def run():
     response = crawl()
     if response.status_code == 200:
-        for key, value in parse(response.content).items():
+        parsed = parse(response.content)
+        if parsed is None:
+            print(f"{__file__}: Parsing response failed: {response.content}")
+            return
+        for key, value in parsed.items():
             if value is None:
                 print(f"{__file__}: Parsing {key} failed")
                 return
