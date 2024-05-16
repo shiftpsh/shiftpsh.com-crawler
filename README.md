@@ -1,6 +1,8 @@
 # shiftpsh.com-crawler
 
-This python script crawls available data to regularly update values used by [shiftpsh.com](https://github.com/shiftpsh/shiftpsh.com).
+This python script crawls available data to regularly update values used by [shiftpsh.com](https://github.com/shiftpsh/shiftpsh.com) (2021).
+
+The 2024 version of the site does not use this crawler; instead, it crawls for data on build time to statically generate needed pages.
 
 ## Run
 
